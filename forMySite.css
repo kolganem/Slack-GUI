@@ -1,0 +1,90 @@
+#myText{
+    color: red;
+
+}
+#topColumn
+{    
+    height: 30px;
+}
+#boxForTopText{    
+    vertical-align: middle;
+}
+.col-1-5{
+    margin: 6px;    
+}
+#leftTopCol{
+    text-align: right; 
+
+}
+.cogItem{
+    color: grey;
+    vertical-align: -10px;
+}
+.arrowsTopLeft{
+    color: grey;
+}
+.arrowsTopRight{
+    color: grey;
+}
+.topMenuItems{
+    color: rgb(75, 69, 69);
+}
+#colForThreeIcons{
+    width: auto;
+    text-align: center;
+}
+.header{
+    vertical-align: middle;
+}
+.commentIcon, .userIcon, .ellipseIcon{
+    color: darkgrey;
+}
+.vl {
+    border-left: 1px solid rgb(168, 161, 161);
+    height: auto;
+    color: darkgrey;
+}
+li {
+    list-style-type: none;
+    margin: 40px;
+}
+ul {
+    margin-left: 0; 
+    padding-left: 0; 
+}
+.lineInList{
+    color: darkgrey;
+}
+#rightColumn{
+    text-align: right;
+}
+.horLine{
+    width: auto;
+}
+.container-fluid{
+    width: auto;  
+    margin: 9px;
+}
+.fa-users{
+    text-align: center;
+}
+#groupIconsMiddle{
+    text-align: right;
+}
+.middleIcon{
+    color: darkgrey;
+    margin: 7px;
+}
+#middleCont{
+    margin: 9px;
+}
+#rowChat{
+    margin: 30px;
+}
+#bottomRow{
+    text-align: right;
+}
+.text{
+    color: rgb(185, 179, 179);
+}
+
