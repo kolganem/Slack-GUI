@@ -2,6 +2,12 @@
     color: red;
 
 }
+body{
+    height: 100%;
+}
+.MainContainer{
+    height: 100%;
+}
 .main{
     display: flex;
 }
@@ -180,7 +186,7 @@ aside{
     display: flex;
     margin-left: 100px;
     margin-right: 100px;
-    margin-bottom: 16px;
+    margin-bottom: 35px;
 }
 .stringInCommoBox_left{
     display: flex;
