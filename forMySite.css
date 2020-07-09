@@ -2,6 +2,9 @@
     color: red;
 
 }
+.main{
+    display: flex;
+}
 #topColumn
 {    
     height: 30px;
@@ -9,24 +12,57 @@
 #boxForTopText{    
     vertical-align: middle;
 }
-.col-1-5{
-    margin: 6px;    
+.Head_container{
+    display: flex;
+}
+.topContainerString{
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    width: calc(100% + 20px);
+}
+.topContainerString_left{
+    flex-grow: 2;
+    flex-wrap: wrap;
+    width: calc(100% + 20px);
+    text-align: right;
+}
+.boxTopForWords{   
+    flex-grow: 1;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: small;
+    text-align: center;    
+}
+.boxForBrackets{
+    vertical-align: middle;
+    flex-grow: 1;
+    text-decoration: none;
+    text-align: center;
+}
+.fa-angle-left{
+    vertical-align: middle;
 }
 #leftTopCol{
     text-align: right; 
 
 }
 .cogItem{
-    color: grey;
-    vertical-align: -10px;
+    color: grey;    
 }
 .arrowsTopLeft{
+
+    vertical-align: middle;
     color: grey;
+
 }
 .arrowsTopRight{
+    
+    vertical-align: middle;
     color: grey;
 }
 .topMenuItems{
+    text-decoration: none;
     color: rgb(75, 69, 69);
 }
 #colForThreeIcons{
@@ -36,21 +72,127 @@
 .header{
     vertical-align: middle;
 }
+.iconsCommChat{
+    margin: 4px;
+    color: gray;
+}
+aside{
+    display: flex;
+    max-width: 300px;    
+    flex-shrink: 0;
+    flex-direction: column;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: grey;
+    font-size: 16px;
+}
+.rowBoxForThreeIcons{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.boxForIconAside{
+    flex-grow: 1;
+    text-align: center;
+}
+.boxForSearch{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
 .commentIcon, .userIcon, .ellipseIcon{
     color: darkgrey;
+}
+.SearchLine{
+    line-height: 2;
+    box-sizing: content-box;
+    display: flex;        
+    border-top-color: grey;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-radius: 10px;
+    border-right-color: rgb(160, 160, 162);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgb(160, 160, 162);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(160, 160, 162);
+    border-left-style: solid;
+    border-left-width: 1px;
+    margin-right: 10px;    
+}
+.boxForIconSearch{
+    text-align: center;
+    width: 35px;
+}
+#SearchBox{
+    border: none;
+    width: auto;
+}
+.boxForSearchWord{
+    max-width: auto;
+}
+.HorLine{
+    color: rgb(226, 218, 218);
+    width: auto;
+    margin: 0px 0;
+	padding: 0;  
 }
 .vl {
     border-left: 1px solid rgb(168, 161, 161);
     height: auto;
     color: darkgrey;
 }
-li {
-    list-style-type: none;
-    margin: 40px;
+.rowAsideUser{
+    text-align: left;
+    vertical-align: middle;
+    line-height: 3.1;    
 }
-ul {
-    margin-left: 0; 
-    padding-left: 0; 
+.elemUserInList{
+    vertical-align: middle;
+}
+.rowInCommomChat{
+    display: flex;
+    line-height: 1.5;
+     
+}
+.itemsTopOfCommonChat{ 
+    display: flex;   
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    vertical-align: middle;    
+}
+.itemsTopOfCommonChat_right{
+    text-align: right;
+}
+.middleGroup_left{
+    text-align: right;
+}
+.BoxForCommonContent{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;    
+}
+.commonChatBox{
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 16px;
+}
+.stringInCommoBox_left{
+    display: flex;
+    flex-grow: 1;
+    margin: 10px;
+    justify-content: flex-start;
+}
+.stringInCommoBox_right{
+    display: flex;
+    flex-grow: 1;
+    margin: 10px;
+    justify-content: flex-end;
 }
 .lineInList{
     color: darkgrey;
@@ -58,33 +200,55 @@ ul {
 #rightColumn{
     text-align: right;
 }
-.horLine{
-    width: auto;
+#FirstGroup{
+    background-color: rgb(237, 239, 241);
 }
 .container-fluid{
     width: auto;  
     margin: 9px;
 }
+.groupIconsMiddle
+{
+    display: flex;
+}
+.itemRight{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    vertical-align: middle;
+}
 .fa-users{
-    text-align: center;
+    color: gray;
+    text-align: center;    
 }
-#groupIconsMiddle{
-    text-align: right;
-}
-.middleIcon{
-    color: darkgrey;
-    margin: 7px;
-}
-#middleCont{
-    margin: 9px;
-}
-#rowChat{
-    margin: 30px;
-}
-#bottomRow{
-    text-align: right;
-}
-.text{
-    color: rgb(185, 179, 179);
+.fa-user-circle-o{
+    color: gray;
 }
 
+.middleIcon{
+    color: darkgrey;
+    margin: 10px;
+}
+.bottomCommoChat{
+    display: flex;
+    
+}
+.strBottomChat_Left{
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+.strBottomChat_Right{
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+.BoxForWriteMessage{
+    display: flex;
+    justify-content: center;
+    border: none;
+    max-width: auto;;
+}
+#MessageBox{
+    border: none;
+}
