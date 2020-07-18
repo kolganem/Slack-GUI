@@ -540,8 +540,8 @@ li {
 .message_avatar_image {
   border-radius: .2em;
   display: block;
-  height: 100% 
-  width: 100% 
+  height: 100%;
+  width: 100%; 
 }
 
 .data_in_message {
