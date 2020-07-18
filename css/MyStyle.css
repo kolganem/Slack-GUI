@@ -540,8 +540,8 @@ li {
 .message_avatar_image {
   border-radius: .2em;
   display: block;
-  height: 100%; 
-  width: 100%;
+  height: 100% 
+  width: 100% 
 }
 
 .data_in_message {
@@ -606,17 +606,13 @@ li {
 
 .main_content::-webkit-scrollbar,
 .workplace__navigation::-webkit-scrollbar{
-  width: 0;
+  width: 0em;
 }
 
 .main_footer {
   grid-area: main_footer;
   font-size: 1rem;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 1em;
-  padding-bottom: 0em;
-  
+  padding: 1em;
   border-right: 1px solid rgba(29, 28, 29, .1);
 }
 
@@ -711,7 +707,9 @@ li {
   border-top: 1px solid rgba(29, 28, 29, .1);;
 }
 
-.bottom_row_in_input_field > ul { 
+.bottom_row_in_input_field > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -724,34 +722,27 @@ li {
 .item_in_bottom_row:hover {
   background: rgba(225, 225, 225, 1);
 }
+
+.item_in_bottom_row:first-child {
+  color: rgba(29, 28, 29, .8);
+}
+
+.item_in_bottom_row:first-child:hover {
+  background-color: dodgerblue;
+  color: #ffffff;
+}
+
 @media only screen and (max-width: 100em) {
   .container {
+    display: -ms-grid;
     display: grid;
-    height: 100vh;
-    grid-template-rows: .24fr .38fr 2.72fr .66fr;
+    height: 100vh;    
+    grid-template-columns: .08fr .40fr 2.1fr;
+    grid-template-rows: .25fr .38fr 2.72fr .66fr;
     overflow: hidden;
-    grid-template-areas: 'top-nav top-nav top-nav top-nav' 'workplace-selector sidebar__header main_header channel-detail__header' 'workplace-selector workplace__navigation main_content channel-detail_content' 'workplace-selector workplace__navigation main_footer channel-detail_content'
+    grid-template-areas: 'top-nav top-nav top-nav' 'workplace-selector sidebar__header main_header ' 'workplace-selector workplace__navigation main_content ' 'workplace-selector workplace__navigation main_footer '
   }
-}
-@media only screen and (max-width: 80em) {
-  .container {    
-    grid-template-areas: 'top-nav top-nav top-nav' 'left_col_selector sidebar__header main_header' 'workplace-selector workplace__navigation main_content' 'workplace-selector workplace__navigation main_footer'
-  }
-}
-@media only screen and (max-width: 20em) {
-  .container {
-    grid-template-areas: 'top-nav top-nav' 'sidebar__header main_header' 'workplace_for_sidebar_navigation main_content' 'workplace__navigation main_footer'
-  }
+
 }
 
-@media only screen and (max-width: 43em) {
-  .container {    
-    grid-template-areas: 'top-nav' 'main_content'
-  }
-}
 
-@media only screen and (max-width: 29em) {
-  .container {    
-    grid-template-areas: 'top-nav' 'main_content'
-  }
-}
