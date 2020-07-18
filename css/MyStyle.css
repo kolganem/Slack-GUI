@@ -740,7 +740,7 @@ li {
     grid-template-columns: .08fr .40fr 2.1fr;
     grid-template-rows: .25fr .38fr 2.72fr .66fr;
     overflow: hidden;
-    grid-template-areas: 'top-nav top-nav top-nav' 'workplace-selector sidebar__header main_header ' 'workplace-selector workplace__navigation main_content ' 'workplace-selector workplace__navigation main_footer '
+    grid-template-areas: 'top-nav top-nav top-nav' 'workplace-selector sidebar__header main_header ' 'workplace-selector workplace__navigation main_content ' 'workplace-selector workplace__navigation main_footer ';
   }
 
 }
