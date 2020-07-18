@@ -1,545 +1,642 @@
 <!DOCTYPE html>
-
-<html lang="ru">
-
+<html lang="en">
 <head>
-    <title>SiteLikeViber</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-    <link href="forMySite.css" type="text/css" rel="stylesheet" />    
-    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/MyStyle.css" rel="stylesheet">
+  <link rel="icon" href="picture/Slack.png" type="image/x-icon">
+  <title>Slack GUI</title>
 </head>
-  
- <body>
-     <div class="MainContainer">     
-    <header>
-        <div class="Head_container">           
-            <div class="topContainerString">
-                <div class="vl"></div>                       
-                <div class="boxForBrackets">
-                    <a class="arrowsTopLeft" href="#">
-                        <i class="fa fa-angle-left fa-lg"></i>                          
-                    </a>                                                                                  
-                </div>
-                <div class="vl"></div>
-                <div class="boxForBrackets">
-                    <a class="arrowsTopRight" href="#">
-                        <i class="fa fa-angle-right fa-lg"></i>
-                    </a>                                
-                </div>
-                <div class="vl"></div>
-                <div class="boxTopForWords">
-                    <a href="#" class="topMenuItems">Просмотры</a>
-                </div>
-                <div class="boxTopForWords">
-                    <a href="#" class="topMenuItems">Чаты</a>
-                </div>
-                <div class="boxTopForWords">
-                    <a href="#" class="topMenuItems">Звонки</a>
-                </div>
-                <div class="boxTopForWords">
-                    <a href="#" class="topMenuItems">Параметры</a>
-                </div>
-                <div class="boxTopForWords">
-                    <a href="#" class="topMenuItems">Справка</a>
-                </div>
-                <div class="boxTopForWords">                    
-                </div>
-                
-            </div>
-            <div class="topContainerString">
-                <div class="TopMiddleBox">
-                    <div class="TopEmptyBox"></div>
-                </div>
-            </div>
-            <div class="topContainerString_left">
-                <div class="TopMiddleBox">
-                    
-                    <div id="leftTopCol">
-                        <a  href="#" class="cogItem">
-                            <i class="fa fa-cog fa-lg"></i>
-                        </a>                
-                    <div>
-                </div>
-            </div>                      
-        </div>
-    </header> 
-    <hr class="HorLine"></hr>
+<body>
+  <div class="container">
 
-    <div class="main">
-        <aside>                           
-                <div class="rowBoxForThreeIcons">
-                    <div class="boxForIconAside">
-                        <a  href="#" class="commentIcon">
-                            <i class="fa fa-comment fa-2x"></i>
-                        </a>
-                    </div>
-                    <div class="boxForIconAside">
-                        <a  href="#" class="userIcon">
-                            <i class="fa fa-user fa-2x"></i>
-                        </a>
-                    </div>
-                    <div class="boxForIconAside">
-                        <a  href="#" class="ellipseIcon">
-                            <i class="fa fa-ellipsis-h fa-2x"></i>
-                        </a>
-                    </div>
-                </div>
-                <hr class="HorLine"></hr>
-                <div class="boxForSearch">
-                    <div class="SearchLine">
-                        <div class="boxForIconSearch">                     
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <div class="boxForSearchWord">
-                            <input type="text" placeholder="Search" id="SearchBox">
-                        </div>                                       
-                    </div>
-                </div>                
-                <hr class="HorLine"></hr>
-                <div class="rowAsideUser"  >
-                    <div class="elemUserInListFirst" id="firstColWorkGroup">
-                        <div class="rowOfAside">
-                            <div class="FirstCol">
-                                <a href="#" >
-                                    <i class="fa fa-users fa-2x">                                                                                    
-                                    </i>
-                                </a>
-                            </div>                            
-                            <div class="SecondCol">                               
-                                    <div class="textOfBoxColTop">
-                                        Workgroup
-                                    </div>
-                                    <div class="textOfBoxColBott">
-                                        lastComment
-                                    </div>
-                            </div>
-                            <div class="ThirdCol">
-                                <div class="textOfBoxColright">
-                                    Yesterday
-                                </div>
-                               
-                            </div> 
-                        </div>
-                        
-                           
-                    </div>                                                        
-                </div>
-                <hr class="HorLine"></hr>
-                <div class="rowAsideUser"  >
-                    <div class="elemUserInList" >
-                        <div class="rowOfAside">
-                            <div class="FirstCol">
-                                <a href="#" >
-                                    <i class="fa fa-user-circle-o fa-2x">                                                                                    
-                                    </i>
-                                </a>
-                            </div>                            
-                            <div class="SecondCol">                               
-                                    <div class="textOfBoxColTop">
-                                        User
-                                    </div>
-                                    <div class="textOfBoxColBott">
-                                        lastComment
-                                    </div>
-                            </div>
-                            <div class="ThirdCol">
-                                <div class="textOfBoxColright">
-                                    Today
-                                </div>
-                               
-                            </div> 
-                        </div>   
-                    </div>                                                        
-                </div>
-                <hr class="HorLine"></hr>
-                <div class="rowAsideUser" >
-                    <div class="elemUserInList">
-                        <div class="rowOfAside">
-                            <div class="FirstCol">
-                                <a href="#" >
-                                    <i class="fa fa-user-circle-o fa-2x">                                                                                    
-                                    </i>
-                                </a>
-                            </div>                            
-                            <div class="SecondCol">                               
-                                    <div class="textOfBoxColTop">
-                                        User
-                                    </div>
-                                    <div class="textOfBoxColBott">
-                                        lastComment
-                                    </div>
-                            </div>
-                            <div class="ThirdCol">
-                                <div class="textOfBoxColright">
-                                    Monday
-                                </div>
-                               
-                            </div> 
-                        </div>  
-                    </div>                                                        
-                </div>
-                <hr class="HorLine"></hr>
-                <div class="rowAsideUser" >
-                    <div class="elemUserInList" >
-                        <div class="rowOfAside">
-                            <div class="FirstCol">
-                                <a href="#" >
-                                    <i class="fa fa-users fa-2x">                                                                                    
-                                    </i>
-                                </a>
-                            </div>                            
-                            <div class="SecondCol">                               
-                                    <div class="textOfBoxColTop">
-                                        Workgroup
-                                    </div>
-                                    <div class="textOfBoxColBott">
-                                        lastComment
-                                    </div>
-                            </div>
-                            <div class="ThirdCol">
-                                <div class="textOfBoxColright">
-                                    6:12
-                                </div>
-                               
-                            </div> 
-                        </div>    
-                    </div>                                                        
-                </div>
-                <hr class="HorLine"></hr>
-                <div class="rowAsideUser" >
-                    <div class="elemUserInList" >
-                        <div class="rowOfAside">
-                            <div class="FirstCol">
-                                <a href="#" >
-                                    <i class="fa fa-user-circle-o fa-2x">                                                                                    
-                                    </i>
-                                </a>
-                            </div>                            
-                            <div class="SecondCol">                               
-                                    <div class="textOfBoxColTop">
-                                        User
-                                    </div>
-                                    <div class="textOfBoxColBott">
-                                        lastComment
-                                    </div>
-                            </div>
-                            <div class="ThirdCol">
-                                <div class="textOfBoxColright">
-                                    Thursday
-                                </div>
-                               
-                            </div> 
-                        </div>    
-                    </div>                                                        
-                </div>
-                <hr class="HorLine"></hr>
-                <div class="rowAsideUser" >
-                    <div class="elemUserInList" >
-                        <div class="rowOfAside">
-                            <div class="FirstCol">
-                                <a href="#" >
-                                    <i class="fa fa-users fa-2x">                                                                                    
-                                    </i>
-                                </a>
-                            </div>                            
-                            <div class="SecondCol">                               
-                                    <div class="textOfBoxColTop">
-                                        Workgroup
-                                    </div>
-                                    <div class="textOfBoxColBott">
-                                        lastComment
-                                    </div>
-                            </div>
-                            <div class="ThirdCol">
-                                <div class="textOfBoxColright">
-                                    Yesterday
-                                </div>
-                               
-                            </div> 
-                        </div>    
-                    </div>                                                        
-                </div>
-                <hr class="HorLine"></hr>
-                <div class="rowAsideUser" >
-                    <div class="elemUserInList" >
-                        <div class="rowOfAside">
-                            <div class="FirstCol">
-                                <a href="#" >
-                                    <i class="fa fa-user-circle-o fa-2x">                                                                                    
-                                    </i>
-                                </a>
-                            </div>                            
-                            <div class="SecondCol">                               
-                                    <div class="textOfBoxColTop">
-                                        user
-                                    </div>
-                                    <div class="textOfBoxColBott">
-                                        lastComment
-                                    </div>
-                            </div>
-                            <div class="ThirdCol">
-                                <div class="textOfBoxColright">
-                                    14:25
-                                </div>
-                               
-                            </div> 
-                        </div>    
-                    </div>                                                        
-                </div>
-                <hr class="HorLine"></hr>
-                <div class="rowAsideUser" >
-                    <div class="elemUserInList" >
-                        <div class="rowOfAside">
-                            <div class="FirstCol">
-                                <a href="#" >
-                                    <i class="fa fa-users fa-2x">                                                                                    
-                                    </i>
-                                </a>
-                            </div>                            
-                            <div class="SecondCol">                               
-                                    <div class="textOfBoxColTop">
-                                        Workgroup
-                                    </div>
-                                    <div class="textOfBoxColBott">
-                                        lastComment
-                                    </div>
-                            </div>
-                            <div class="ThirdCol">
-                                <div class="textOfBoxColright">
-                                    Friday
-                                </div>                               
-                            </div> 
-                        </div>    
-                    </div>                                                        
-                </div>
-                <hr class="HorLine"></hr>
-        </aside>
-        <section class="BoxForCommonContent">            
-            <div class="rowInCommomChat">                
-                <div class = "itemsTopOfCommonChat">                    
-                        <div class="colInCommChat">
-                            <a href="#">
-                                <i class="fa fa-users fa-2x">                                                                            
-                                </i>
-                            </a>                            
-                        </div>
-                        <div class="rowForGroups">
-                            <div class="textAboutNameGroup">
-                                Workgroup
-                            </div>                        
-                            <div class="textAboutGroups">
-                                <a class="LinkAbout" href="#" >                                    
-                                    Участники 10
-                                </a> 
-                                
-                            </div>
-                        </div> 
-                </div>
-                <div class = "itemsTopOfCommonChat_right">
-                    <div id="groupIconsMiddle">
-                        <div class="itemRight">
-                            <a class="iconsCommChat" href="#">
-                                <i class="fa fa-user-plus fa-lg"></i>                          
-                            </a>
-                            <a class="iconsCommChat" href="#">
-                                <i class="fa fa-volume-control-phone fa-lg"></i>                          
-                            </a>
-                            <a class="iconsCommChat" href="#">
-                                <i class="fa fa-video-camera fa-lg"></i>                          
-                            </a>
-                            <a class="iconsCommChat" href="#">
-                                <i class="fa fa-info fa-lg"></i>                          
-                            </a> 
-                        </div> 
-                    </div>
-                </div>                    
+    <!------------------------------------------------------------------------------------------------------------>
+    <!---------------------------------------- Top-row-for-navigation -------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------>
+
+    <div class="top_nav">
+      <div class="top_nav_left">        
+        <div class="top_nav_history">          
+          <button class="top_nav_history_button button unstyled-button">
+            <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+      <div class="top_nav_search">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <span class="top_nav_search_text">String for search</span> 
+      </div>
+      <div class="top_nav_right">
+        <button class="top_nav_help_button unstyled-button button">
+          <i class="fa fa-question" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------------------------------>
+    <!-----------------------------------left-col-for-some-group-------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------>
+
+    <nav class="left_col_selector">
+      <ul>
+        <li class="left_col_selector_item button unstyled-button">
+          <a class="left_col_selector_item_link" href="#">
+            <i class="fa fa-users fa-2x"></i>
+          </a>
+        </li>
+        <li class="left_col_selector_item button unstyled-button">
+          <a class="left_col_selector_item_link" href="#">
+            <i class="fa fa-user-circle-o fa-2x"></i>
+          </a>
+        </li>
+        <li class="left_col_selector_item button unstyled-button">
+          <a class="left_col_selector_item_link" href="#">
+            <i class="fa fa-server fa-2x"></i>
+          </a>
+        </li>
+        <li class="left_col_selector_item button unstyled-button">
+          <a class="left_col_selector_item_link" href="#">
+            <i class="fa fa-plus fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!------------------------------------------------------------------------------------------------------------>
+    <!---------------------------------------------sidebar-col-navigation----------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------>
+
+    <div class="sidebar_col_header">
+      <div class="sidebar_col_header_button">
+        <div class="sidebar_col_header_info">
+          <div class="sidebar_header_info_about_team">
+            <span class="sidebar_header_info_about_team_text">Ais</span>
+            <i class="fa fa-chevron-down"></i>
+          </div>
+          <div class="sidebar_col_header_info_user">
+              <span class="info_about_user">
+                <i class="fa fa-circle"></i>
+              </span>
+            <span class="sidebar_col_header_info_about_user_text">
+                Alexei.Kolgan
+              </span>
+          </div>
+        </div>
+      </div>
+      <button class="sidebar_col_header_new_message_but button unstyled-button">
+        <i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i>
+      </button>
+    </div>
+    <nav class="workplace_for_sidebar_navigation">
+      <ul class="workplace_for_sidebar_list">
+        <li class="workplace_for_sidebar_list_item">
+          <a href="" class="workplace_for_sidebar_list_item_link">
+              <span class="channel_link_icon_in_sidebar">
+                <i class="fa fa-commenting-o"></i>
+              </span>
+            <span class="channel_link_name_in_sidebar">
+                Threads
+              </span>
+          </a>
+        </li>
+        <li class="workplace_for_sidebar_list_item">
+          <a href="" class="workplace_for_sidebar_list_item_link">
+              <span class="channel_link_icon_in_sidebar">
+                <i class="fa fa-at"></i>
+              </span>
+            <span class="channel_link_name_in_sidebar">
+                Mentions & reactions
+              </span>
+          </a>
+        </li>
+        <li class="workplace_for_sidebar_list_item">
+          <a href="" class="workplace_for_sidebar_list_item_link">
+              <span class="channel_link_icon_in_sidebar">
+                <i class="fa fa-address-book-o"></i>
+              </span>
+            <span class="channel_link_name_in_sidebar">
+                People
+              </span>
+          </a>
+        </li>
+        <li class="workplace_for_sidebar_list_item">
+          <a href="" class="workplace_for_sidebar_list_item_link">
+              <span class="channel_link_icon_in_sidebar">
+                <i class="fa fa-th"></i>
+              </span>
+            <span class="channel_link_name_in_sidebar">
+                Apps
+              </span>
+          </a>
+        </li>
+        <li class="workplace_for_sidebar_list_item">
+          <a href="" class="workplace_for_sidebar_list_item_link">
+              <span class="channel_link_icon_in_sidebar">
+                <i class="fa fa-files-o"></i>
+              </span>
+
+            <span class="channel_link_name_in_sidebar">
+                Files
+              </span>
+          </a>
+        </li>
+        <li class="workplace_for_sidebar_list_item">
+          <a href="" class="workplace_for_sidebar_list_item_link">
+              <span class="channel_link_icon_in_sidebar">
+                <i class="fa fa-arrow-up"></i>
+              </span>
+            <span class="channel_link_name_in_sidebar">
+                Show Less
+              </span>
+          </a>
+        </li>
+      </ul>
+      <ul class="channels__list">
+        <li class="workplace_for_sidebar_list_item">
+          <a href="#" class="workplace_for_sidebar_list_item_link">
+              <span class="channel_link_icon_in_sidebar">
+                +
+              </span>
+            <span class="channel_link_name_in_sidebar">
+                Some channels
+              </span>
+          </a>
+          <span class="add-new">
+              +
+            </span>
+        </li>
+        <li class="workplace_for_sidebar_list_item">
+          <a href="#" class="workplace_for_sidebar_list_item_link">
+              <span class="channel_link_icon_in_sidebar">
+                #
+              </span>
+            <span class="channel_link_name_in_sidebar">
+                Some channels
+              </span>
+          </a>
+        </li>
+        <li class="workplace_for_sidebar_list_item">
+          <a href="#" class="workplace_for_sidebar_list_item_link">
+              <span class="channel_link_icon_in_sidebar">
+                #
+              </span>
+            <span class="channel_link_name_in_sidebar">
+              Some channels
+              </span>
+          </a>
+        </li>
+        <li class="workplace_for_sidebar_list_item">
+          <a href="#" class="workplace_for_sidebar_list_item_link">
+              <span class="channel_link_icon_in_sidebar">
+                #
+              </span>
+            <span class="channel_link_name_in_sidebar">
+              Some channels
+              </span>
+          </a>
+        </li>
+        <li class="workplace_for_sidebar_list_item">
+          <a href="#" class="workplace_for_sidebar_list_item_link">
+              <span class="channel_link_icon_in_sidebar">
+                #
+              </span>
+            <span class="channel_link_name_in_sidebar">
+              Some channels
+              </span>
+          </a>
+        </li>
+        <li class="workplace_for_sidebar_list_item">
+          <a href="#" class="workplace_for_sidebar_list_item_link">
+              <span class="channel_link_icon_in_sidebar">
+                <i class="fa fa-lock"></i>
+              </span>
+            <span class="channel_link_name_in_sidebar">
+              Some channels
+              </span>
+          </a>
+        </li>
+        <li class="workplace_for_sidebar_list_item">
+          <a href="#" class="workplace_for_sidebar_list_item_link">
+              <span class="channel_link_icon_in_sidebar">
+                +
+              </span>
+            <span class="channel_link_name_in_sidebar">
+              Some channels
+              </span>
+          </a>
+        </li>
+      </ul>
+      <ul class="user-activity__list">
+        <li class="workplace_for_sidebar_list_item">
+          <a href="#" class="workplace_for_sidebar_list_item_link">
+              <span class="channel_link_icon_in_sidebar">
+                <i class="fa fa-caret-down"></i>
+              </span>
+            <span class="channel_link_name_in_sidebar">
+                Direct messages
+              </span>
+          </a>
+          <span class="add-new">
+              +
+            </span>
+        </li>
+        <li class="workplace_for_sidebar_list_item">
+          <a href="#" class="workplace_for_sidebar_list_item_link">
+              <span class="channel_link_icon_in_sidebar info_user_status">
+                <i class="fa fa-heart"></i>
+              </span>
+            <span class="channel_link_name_in_sidebar">
+                Slackbot
+              </span>
+          </a>
+        </li>
+        <li class="workplace_for_sidebar_list_item">
+          <a href="#" class="workplace_for_sidebar_list_item_link">
+              <span class="channel_link_icon info_user_status">
+                <i class="fa fa-circle"></i>
+              </span>
+            <span class="channel_link_name_in_sidebar">
+                Alexei.Kolgan (you)
+              </span>
+          </a>
+        </li>
+        <li class="workplace_for_sidebar_list_item">
+          <a href="#" class="workplace_for_sidebar_list_item_link">
+              <span class="channel_link_icon">
+                +
+              </span>
+            <span class="channel_link_name_in_sidebar">
+                Invite people
+              </span>
+          </a>
+        </li>
+      </ul>
+      <ul class="user-activity__list">
+        <li class="workplace_for_sidebar_list_item">
+          <a href="#" class="workplace_for_sidebar_list_item_link">
+              <span class="channel_link_icon">
+                <i class="fa fa-caret-down"></i>
+              </span>
+            <span class="channel_link_name_in_sidebar">
+                Apps
+              </span>
+          </a>
+          <span class="add_new_string">
+              +
+            </span>
+        </li>
+      </ul>
+    </nav>
+
+    <!------------------------------------------------------------------------------------------------------------>
+    <!---------------------------------------------top_row_in_commom_chat----------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------>
+    
+    <div class="top_main_header">
+      <div class="top_main_header_info">
+        <div class="info_about_channel_title">
+          <div class="info_about_channel_title_name button unstyled-button">
+            <i class="fa fa-lock"></i>
+            <span class="channel_link_name_of_group">
+                Name of group
+              </span>
+          </div>
+          <div class="button unstyled-button">
+                <span>
+                  &nbsp;
+                  <i class="fa fa-star-o"></i>
+                </span>
+          </div>
+        </div>
+        <div class="channel_data_count_user">
+          <button class="button unstyled-button">
+            <i class="fa fa-user-o"></i>
+            124
+          </button>                    
+          <span>|</span>
+          <button class="button unstyled-button">
+                <span class="channel_add-topic_text">
+                  Add a topic
+                </span>
+          </button>
+        </div>
+      </div>
+      <button class="top_row_sidebar_info_button button unstyled-button">
+        <i class="fa fa-info-circle fa-2x"></i>
+      </button>
+    </div>
+
+    <!------------------------------------------------------------------------------------------------------------>
+    <!---------------------------------------------content-in-common-chat----------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------>
+
+    <div class="main_content"> 
+      <div class="message">
+        <div class="message_media">
+          <div class="image_container_for_message">
+            <i class="fa fa-user fa-2x"></i>
+          </div>
+        </div>
+        <div class="data_in_message">
+              <span class="sender_of_message">
+                Name
+              </span>
+          &nbsp;
+          <span class="timestamp_in_message">
+                1:11 AM
+              </span>
+          <br>
+          <span class="content_in_message">
+              Cumque cupiditate dignissimos distinctio eaque eum iure labore quae quia ullam voluptatem.Cumque cupiditate dignissimos distinctio eaque eum iure labore quae quia ullam voluptatem.
+              </span>
+          <div class="reply_in_message">
+            <div class="reply_image_container">
+              <i class="fa fa-user-secret"></i>
             </div>
-            <hr class="HorLine"></hr>
-            <div class="commonChatBox">
-                <div class="stringInCommoBox_left">
-                    <a  href="#">
-                        <i class="fa fa-user fa-2x"></i>
-                    </a>
-                    <div class="bubble">
-                        <div class="textInBubble">
-                            Hello, how it's going?
-                        </div>
-                        <div class="timeInBubble">
-                            10:44
-                        </div>
-                    </div>                   
-                                                          
-                </div>
-                <div class="stringInCommoBox_left">                   
-                </div>
-            </div>
-            <div class="commonChatBox">
-                <div class="stringInCommoBox_right">                    
-                </div>
-                <div class="stringInCommoBox_right">
-                    <a  href="#">
-                        <i class="fa fa-female fa-2x"></i>
-                    </a>
-                    <div class="bubbleForAnotherUser">
-                        <div class="textInBubble">
-                            It is ok.
-                        </div>
-                        <div class="timeInBubble">
-                            10:45
-                        </div>                        
-                    </div>                   
-                    
-                </div>
-            </div>
-            <div class="commonChatBox">
-                <div class="stringInCommoBox_left">
-                    <a  href="#">
-                        <i class="fa fa-user fa-2x"></i>
-                    </a>
-                    <div class="bubble">
-                        <div class="textInBubble">
-                            Are you finished the work?
-                        </div>
-                        <div class="timeInBubble">
-                            10:46
-                        </div>
-                    </div>       
-                    
-                </div>
-                <div class="stringInCommoBox_left">                    
-                </div>
-            </div>
-            <div class="commonChatBox">
-                <div class="stringInCommoBox_right">                    
-                </div>
-                <div class="stringInCommoBox_right">
-                    <a  href="#">
-                        <i class="fa fa-female fa-2x"></i>
-                    </a>
-                    <div class="bubbleForAnotherUser">
-                        <div class="textInBubble">
-                            Yes a couple of minutes and send you to check.
-                        </div>
-                        <div class="timeInBubble">
-                            10:46
-                        </div>                        
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="commonChatBox">
-                <div class="stringInCommoBox_left">
-                    <a  href="#" >
-                        <i class="fa fa-user fa-2x"></i>
-                    </a>
-                    <div class="bubble">
-                        <div class="textInBubble">
-                            Perfectly, do you wish to have a meal at lunchtime?
-                        </div>
-                        <div class="timeInBubble">
-                            10:47
-                        </div>
-                    </div> 
-                   
-                </div>
-                <div class="stringInCommoBox_left">                    
-                </div>
-            </div>
-            <div class="commonChatBox">
-                <div class="stringInCommoBox_right">                    
-                </div>
-                <div class="stringInCommoBox_right">
-                    <a  href="#" >
-                        <i class="fa fa-female fa-2x"></i>
-                    </a>
-                    <div class="bubbleForAnotherUser">
-                        <div class="textInBubble">
-                            Yes with pleasure.
-                        </div>
-                        <div class="timeInBubble">
-                            10:47
-                        </div>                        
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="commonChatBox">
-                <div class="stringInCommoBox_left">
-                    <a  href="#" >
-                        <i class="fa fa-user fa-2x"></i>
-                    </a>
-                    <div class="bubble">
-                        <div class="textInBubble">
-                            I will pick you up.
-                        </div>
-                        <div class="timeInBubble">
-                            10:48
-                        </div>
-                    </div>                     
-                </div>                           
-            </div>            
-            <div class="commonChatBox">
-                <div class="stringInCommoBox_right">                    
-                </div>
-                <div class="stringInCommoBox_right">
-                    <a  href="#">
-                        <i class="fa fa-female fa-lg"></i>
-                    </a>
-                    <div class="bubbleForAnotherUser">
-                        <div class="textInBubble">
-                            Ok.
-                        </div>
-                        <div class="timeInBubble">
-                            10:49
-                        </div>                        
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="commonChatBox">
-                <div class="stringInCommoBox_right">                    
-                </div>
-                <div class="stringInCommoBox_right">                    
-                </div>
-            </div>
-            <div class="commonChatBox"> 
-                <div class="stringInCommoBox_right"></div>                
-            </div>
-            <div class="commonChatBox"> 
-                <div class="stringInCommoBox_right"></div>                
-            </div>            
+            <div class="reply_image_container">
+              <i class="fa fa-user-circle-o"></i>
+            </div>           
             
-            <hr class="HorLine"></hr>
-            <div class="bottomCommoChat">
-                <div class="strBottomChat_Left">
-                    <a  href="#" class="middleIcon">
-                        <i class="fa fa-plus fa-lg"></i>
-                    </a>
-                    <a  href="#" class="middleIcon">
-                        <i class="fa  fa-picture-o fa-lg"></i>
-                    </a> 
-                    <a  href="#" class="middleIcon">
-                        <i class="fa fa-smile-o fa-lg"></i>
-                    </a>
-                    <div class="BoxForWriteMessage">
-                        <input type="text" placeholder="Write a message" id="MessageBox">
-                    </div>                  
-                </div>
-                <div class="strBottomChat_Right">
-                    <a  href="#" class="middleIcon">
-                        <i class="fa fa-microphone fa-lg"></i>
-                    </a>
-                </div>
-
-            </div>                
+            <span class="text_in_replies">
+              Last reply two day days ago
+            </span>
+          </div>
         </div>
+      </div>
+
+      <div class="message">
+        <div class="message_media">
+          <div class="image_container_for_message">
+            <i class="fa fa-user-secret fa-2x"></i>
+          </div>
+        </div>
+        <div class="data_in_message">
+              <span class="sender_of_message">
+                Somebody
+              </span>
+          &nbsp;
+          <span class="timestamp_in_message">
+                2:22 AM
+              </span>
+          <br>
+          <span class="content_in_message">
+              was added to group by ilya.mokin.ais, along with 4 others.
+              </span>
+        </div>
+      </div>
+
+      <div class="message">
+        <div class="message_media">
+          <div class="image_container_for_message">
+            <i class="fa fa-user fa-2x"></i>
+          </div>
+        </div>
+        <div class="data_in_message">
+              <span class="sender_of_message">
+                Name
+              </span>
+          &nbsp;
+          <span class="timestamp_in_message">
+                1:11 AM
+              </span>
+          <br>
+          <span class="content_in_message">
+              Cumque cupiditate dignissimos distinctio eaque eum iure labore quae quia ullam voluptatem.Cumque cupiditate dignissimos distinctio eaque eum iure labore quae quia ullam voluptatem.
+              </span>
+          <div class="reply_in_message">
+            <div class="reply_image_container">
+              <i class="fa fa-user-secret"></i>
+            </div>
+            <div class="reply_image_container">
+              <i class="fa fa-user-circle-o"></i>
+            </div>           
+            
+            <span class="text_in_replies">
+              Last reply two day days ago
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <span class="data-timestamp data-timestamp-hr">
+        Monday, Jun 15
+        &nbsp;
+        <i class="fa fa-chevron-down"></i>
+      </span>
+
+      <div class="message">
+        <div class="message_media">
+          <div class="image_container_for_message">
+            <i class="fa fa-user fa-2x"></i>
+          </div>
+        </div>
+        <div class="data_in_message">
+              <span class="sender_of_message">
+                Name
+              </span>
+          &nbsp;
+          <span class="timestamp_in_message">
+                1:11 AM
+              </span>
+          <br>
+          <span class="content_in_message">
+              Cumque cupiditate dignissimos distinctio eaque eum iure labore quae quia ullam voluptatem.Cumque cupiditate dignissimos distinctio eaque eum iure labore quae quia ullam voluptatem.
+              </span>
+          <div class="reply_in_message">
+            <div class="reply_image_container">
+              <i class="fa fa-user-secret"></i>
+            </div>
+            <div class="reply_image_container">
+              <i class="fa fa-user-circle-o"></i>
+            </div>           
+            
+            <span class="text_in_replies">
+              Last reply two day days ago
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message">
+        <div class="message_media">
+          <div class="image_container_for_message">
+            <i class="fa fa-user-secret fa-2x"></i>
+          </div>
+        </div>
+        <div class="data_in_message">
+              <span class="sender_of_message">
+                Somebody
+              </span>
+          &nbsp;
+          <span class="timestamp_in_message">
+                2:22 AM
+              </span>
+          <br>
+          <span class="content_in_message">
+            <div class="picture_class">
+              <span>
+                  <img src="picture/screen.jpg" alt="Screen from Slack" width="30%" height="50%">           
+                  <img src="picture/Smile.jpg" alt="Screen from Slack" width="30%" height="50%"> 
+              </span>              
+            </div> 
+                       
+              </span>
+        </div>
+      </div>
+
+      <div class="message">
+        <div class="message_media">
+          <div class="image_container_for_message">
+            <i class="fa fa-user-secret fa-2x"></i>
+          </div>
+        </div>
+        <div class="data_in_message">
+              <span class="sender_of_message">
+                Somebody
+              </span>
+          &nbsp;
+          <span class="timestamp_in_message">
+                2:22 AM
+              </span>
+          <br>
+          <span class="content_in_message">
+              was added to group by ilya.mokin.ais, along with 2 others.
+              </span>
+        </div>
+      </div>
+
+      <div class="message">
+        <div class="message_media">
+          <div class="image_container_for_message">
+            <i class="fa fa-user-secret fa-2x"></i>
+          </div>
+        </div>
+        <div class="data_in_message">
+              <span class="sender_of_message">
+                Somebody
+              </span>
+          &nbsp;
+          <span class="timestamp_in_message">
+                2:22 AM
+              </span>
+          <br>
+          <span class="content_in_message">
+              was added to group by ilya.mokin.ais, along with 5 others.
+              </span>
+        </div>
+      </div>
+
+      <div class="message">
+        <div class="message_media">
+          <div class="image_container_for_message">
+            <i class="fa fa-user fa-2x"></i>
+          </div>
+        </div>
+        <div class="data_in_message">
+              <span class="sender_of_message">
+                Name
+              </span>
+          &nbsp;
+          <span class="timestamp_in_message">
+                1:11 AM
+              </span>
+          <br>
+          <span class="content_in_message">
+              Cumque cupiditate dignissimos distinctio eaque eum iure labore quae quia ullam voluptatem.Cumque cupiditate dignissimos distinctio eaque eum iure labore quae quia ullam voluptatem.
+              </span>
+          <div class="reply_in_message">
+            <div class="reply_image_container">
+              <i class="fa fa-user-secret"></i>
+            </div>
+            <div class="reply_image_container">
+              <i class="fa fa-user-circle-o"></i>
+            </div>           
+            
+            <span class="text_in_replies">
+              Last reply two day days ago
+            </span>
+          </div>
+        </div>
+      </div>      
+
+      <hr>
+
+      <span class="data-timestamp data-timestamp-hr">
+        Friday, Jun 25th
+        &nbsp;
+        <i class="fa fa-chevron-down"></i>
+      </span>
+      
+      <div class="message">
+        <div class="message_media">
+          <div class="image_container_for_message">
+            <i class="fa fa-user fa-2x"></i>
+          </div>
+        </div>
+        <div class="data_in_message">
+              <span class="sender_of_message">
+                Name
+              </span>
+          &nbsp;
+          <span class="timestamp_in_message">
+                1:11 AM
+              </span>
+          <br>
+          <span class="content_in_message">
+              Cumque cupiditate dignissimos distinctio eaque eum iure labore quae quia ullam voluptatem.Cumque cupiditate dignissimos distinctio eaque eum iure labore quae quia ullam voluptatem.
+              </span>
+          <div class="reply_in_message">
+            <div class="reply_image_container">
+              <i class="fa fa-user-secret"></i>
+            </div>
+            <div class="reply_image_container">
+              <i class="fa fa-user-circle-o"></i>
+            </div>           
+            
+            <span class="text_in_replies">
+              Last reply two day days ago
+            </span>
+          </div>
+        </div>
+      </div>      
+    </div>
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <!-------------------------------------------------footer-in-common-chat------------------------------------------------>
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+    <div class="main_footer">
+      <div class="panel_for_input">
+        <div class="field_for_input">
+          <div class="input_in_field">
+            <input type="text" placeholder="Write a message for this group">
+          </div>
+          <div class="bottom_row_in_input_field">
+            <ul class="input_field_left_panel">
+              <li class="item_in_bottom_row"><i class="fa fa-bolt fa-lg" aria-hidden="true"></i></li>
+              <li class="item_in_bottom_row"><i class="fa fa-bold" aria-hidden="true"></i></li>
+              <li class="item_in_bottom_row"><i class="fa fa-italic" aria-hidden="true"></i></li>
+              <li class="item_in_bottom_row"><i class="fa fa-strikethrough" aria-hidden="true"></i></li>
+              <li class="item_in_bottom_row"><i class="fa fa-code" aria-hidden="true"></i></li>
+              <li class="item_in_bottom_row"><i class="fa fa-link" aria-hidden="true"></i></li>
+              <li class="item_in_bottom_row"><i class="fa fa-list-ol" aria-hidden="true"></i></li>
+              <li class="item_in_bottom_row"><i class="fa fa-list" aria-hidden="true"></i></li>
+              <li class="item_in_bottom_row"><i class="fa fa-list-alt" aria-hidden="true"></i></li>
+              <li class="item_in_bottom_row"><i class="fa fa-code" aria-hidden="true"></i></li>
+            </ul>
+            <ul class="input_field_right_panel">
+              <li class="item_in_bottom_row">Aa</li>
+              <li class="item_in_bottom_row">@</li>
+              <li class="item_in_bottom_row"><i class="fa fa-smile-o" aria-hidden="true"></i></li>
+              <li class="item_in_bottom_row"><i class="fa fa-paperclip" aria-hidden="true"></i></li>
+              <li class="item_in_bottom_row"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div> 
-</div>
-</div> 
-
-
+  </div>
 </body>
 </html>
