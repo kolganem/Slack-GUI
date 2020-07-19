@@ -732,7 +732,7 @@ li {
   color: #ffffff;
 }
 
-@media only screen and (max-width: 100em) {
+@media only screen and (max-width: 200em) {
   .container {
     display: -ms-grid;
     display: grid;
