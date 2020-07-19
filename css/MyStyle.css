@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: Slack-Lato, appleLogo, sans-serif;
 }
@@ -127,10 +126,8 @@ li {
   min-width: 0;
   max-width: 32em;
   padding: 0 .5em;
-  border-radius: .9em;
-  color: #ffffff;
-  opacity: .8;
-  background: rgb(85, 37, 87);
+  border-radius: .9em;  
+  opacity: .8;  
   box-shadow: inset 0 0 0 1px rgb(94, 39, 84);
   cursor: pointer;  
   display: flex;  
@@ -146,13 +143,28 @@ li {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  color: inherit;
   opacity: .9;
   margin-right: auto;
   font-size: .8em;
   line-height: 1.4;
-  font-weight: 400;
-  display: block;  
+  background: rgb(94, 39, 84); 
+  color:rgb(94, 39, 84);
+  width: 100%;
+
+}
+.box_for_input_top{
+  background-color:#371238;
+  border: 0;
+  border-bottom: none;
+  border-top: none;
+  box-shadow: rgb(94, 39, 84) ;
+  height: 100%;
+  color: #f8f7f8;
+  outline: none;
+  width: 100%;
+}
+.box_for_input_top::placeholder{
+  color: #CFC6D0;
 }
 .top_nav_right {  
   flex: 1;
@@ -334,17 +346,40 @@ li {
   color: #50235e;
   border-color: rgb(82, 38, 83);
   box-shadow: 0 1px 0 0 rgba(255, 255, 255, .5);
+  scrollbar-arrow-color: #603461;
+  overflow-x: none;
+  overflow-y: scroll;
+}
+.workplace_for_sidebar_navigation::-webkit-scrollbar{
+  background-color: #CFC6D0;
+}
+.workplace_for_sidebar_navigation::-webkit-scrollbar {
+  width: 10px;
+  background-color:  #603461;
 }
 
+.workplace_for_sidebar_navigation::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+.workplace_for_sidebar_navigation::-webkit-scrollbar-thumb {
+  background: rgb(129, 61, 126); 
+  border-radius: 10px;
+}
+
+.workplace_for_sidebar_navigation::-webkit-scrollbar-thumb:hover {
+  background: rgb(129, 61, 126); 
+}
 .workplace_for_sidebar_navigation > ul {
+  padding-left: 1em;
   padding-top: 1em;
   padding-bottom: 1em;
+  padding-right: 1em;
 }
-
 .workplace_for_sidebar_list {
   border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
-
 .workplace_for_sidebar_list_item {
   font-size: 1rem;
   padding: .1em 0;
@@ -471,16 +506,37 @@ li {
   font-size: 1rem;
   padding: 0 1em 0 .5em;
   background-color: #ffffff;
-  overflow: scroll;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   border-right: 1px solid rgba(29, 28, 29, .1);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  
 }
+.main_content::-webkit-scrollbar{
+  background-color: #f2e6f3;
+}
+.main_content::-webkit-scrollbar {
+  width: 10px;
+  background-color:  #faf6fa;
+}
+
+.main_content::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(255, 255, 255); 
+  border-radius: 10px;
+}
+
+.main_content::-webkit-scrollbar-thumb {
+  background: rgb(107, 107, 107); 
+  border-radius: 10px;
+}
+
+.main_content::-webkit-scrollbar-thumb:hover {
+  background: rgb(102, 102, 102); 
+}
+
 
 .data-timestamp {
   position: -webkit-sticky;
@@ -604,16 +660,18 @@ li {
   cursor: pointer;
 }
 
-.main_content::-webkit-scrollbar,
-.workplace__navigation::-webkit-scrollbar{
-  width: 0em;
-}
+/* .main_content::-webkit-scrollbar,
+.workplace_for_sidebar_navigation::-webkit-scrollbar
+.workplace__navigation::-webkit-scrollbar{  
+
+} */
 
 .main_footer {
   grid-area: main_footer;
   font-size: 1rem;
-  padding: 1em;
+  padding: 5px;
   border-right: 1px solid rgba(29, 28, 29, .1);
+
 }
 
 .panel_for_input {
@@ -723,26 +781,17 @@ li {
   background: rgba(225, 225, 225, 1);
 }
 
-.item_in_bottom_row:first-child {
-  color: rgba(29, 28, 29, .8);
-}
-
-.item_in_bottom_row:first-child:hover {
-  background-color: dodgerblue;
-  color: #ffffff;
-}
-
-@media only screen and (max-width: 200em) {
+@media only screen and (max-width: 100em) {
   .container {
     display: -ms-grid;
     display: grid;
-    height: 100vh;    
     grid-template-columns: .08fr .40fr 2.1fr;
-    grid-template-rows: .25fr .38fr 2.72fr .66fr;
+    grid-template-rows: .25fr .38fr 2.72fr .46fr;
+    -ms-grid-rows: .24fr .38fr 2.72fr .66fr;
+    -ms-grid-columns: .08fr .40fr 2.1fr;
     overflow: hidden;
     grid-template-areas: 'top-nav top-nav top-nav' 'workplace-selector sidebar__header main_header ' 'workplace-selector workplace__navigation main_content ' 'workplace-selector workplace__navigation main_footer ';
   }
-
 }
 
 
