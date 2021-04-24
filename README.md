@@ -1,5 +1,6 @@
+#### Simple examle of Slack GUI
 
-https://kolganem.github.io/
+[Look at Slack GUI](https://kolganem.github.io/)
 
-Slack GUI
+
 
